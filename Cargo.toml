@@ -1,0 +1,18 @@
+[package]
+name = "shim"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "shim"
+crate-type = ["cdylib"]
+
+[dependencies]
+autocxx = "0.23.1"
+cxx = "1.0.83"
+
+[build-dependencies]
+autocxx-build = "0.23.1"
+miette = {version = "5.5.0", features = ["fancy"]}
